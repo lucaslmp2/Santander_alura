@@ -2,14 +2,6 @@
 
 Repositório com exercícios e projetos do curso de lógica e Git/GitHub (Alura). Contém várias pastas com aulas práticas e projetos iniciais em JavaScript, HTML e CSS — prontos para abrir no navegador ou executar via servidor local.
 
-## Conteúdo
-
-- `3386-git-github-projeto_inicial/` — projeto inicial usado na disciplina de Git/GitHub.
-- `logica-js-aula_1/` até `logica-js-aula_5/` — exercícios e exemplos das aulas 1 a 5.
-- `logica-js-projeto_inicial/` — projeto final/inicial de lógica em JavaScript.
-- Arquivos estáticos: `index.html`, `app.js`, `style.css` em cada pasta com assets dentro de `img/`.
-
-> Observação: a estrutura acima é um resumo — explore cada pasta para ver os arquivos e práticas associadas.
 
 ## Como usar
 
@@ -56,4 +48,6 @@ npx http-server . -p 8000
 1. Fork ou clone o repositório.
 2. Crie uma branch com um nome descritivo.
 3. Adicione/edite arquivos e faça commits pequenos e claros.
+4. Abra um pull request descrevendo a mudança.
+e claros.
 4. Abra um pull request descrevendo a mudança.
