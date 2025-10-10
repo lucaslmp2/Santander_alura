@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container__conteudo">
+             <div class="container__informacoes">
+                <div class="container__texto">
+                    <h1></h1>
+                    <p class="texto__paragrafo"></p>
+                </div>
+                <input type="text" placeholder="Dobrar número" class="container__input">
+                <input id="multiplica" type="text" placeholder="Multiplicar Número" class="container__input">
+                <input id="num1" type="text" min="1" max="10" class="container__input" placeholder="Primeiro número para calcular média ou verificar maior numero ">
+                <input id="num2" type="text" min="1" max="10" class="container__input" placeholder="Segundo número para calcular média ou verificar maior numero">
+                <input id="num3" type="text" min="1" max="10" class="container__input" placeholder="Terceiro número para calcular média">
+                <div class="chute container__botoes">
+                <button onclick="olaMundo()" class="container__botao">Olá, Mundo</button>   
+                <button onclick="olaUser()" class="container__botao">Olá, usuário</button>
+                <button onclick="duplicarNumero()" class="container__botao">Duplicar</button>
+                <button onclick="calcularMedia()" class="container__botao">Média</button>
+                <button onclick="calcularMaiorNumero()" class="container__botao">Maior Número</button>
+                <button onclick="multiplicaNumero()" class="container__botao">Multiplicar Número</button>
+            </div>
+             </div>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
