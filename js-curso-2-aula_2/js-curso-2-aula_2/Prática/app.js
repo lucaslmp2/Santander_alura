@@ -29,3 +29,17 @@ function limparCampos(){
    altura = document.getElementById('altura');
    altura.value = '';
 }
+
+function calculadoraFatorial(){
+    let fatorial = document.getElementById('fatorial').value;
+    let aux = 0;
+    if(fatorial==1||fatorial==0){
+        fatorial = 1;
+    }else{
+        for(let i = fatorial-1; i>=1; i--){
+            aux = fatorial * i;
+            fatorial = aux;
+        }
+    }
+    return mensagemNaTela.innerHTML = fatorial;
+}
