@@ -47,3 +47,8 @@ function conversaoDolarReal(){
     let valor = document.getElementById('converter').value;
     return mensagemNaTela.innerHTML = valor * 4.80;
 }
+function calculoArea(){
+    let base = document.getElementById('base').value;
+    let alturaRetangular = document.getElementById('alturaRetangular').value;
+    return mensagemNaTela.innerHTML = `Área:    ${base * alturaRetangular}cm²`;
+}
