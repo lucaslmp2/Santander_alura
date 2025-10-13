@@ -13,25 +13,26 @@ Crie uma função que mostre na tela a tabuada de um número dado como parâmetr
 */}
 
 let mensagemNaTela = document.querySelector('h2');
+let tabuadaNaTela = document.getElementById('resultado');
+let fatorialNaTela = document.getElementById('fatorialResultado');
+let conversaoNaTela = document.getElementById('conversaoResultado');
+let areaNaTela = document.getElementById('areaResultado');
+let areaCircularNaTela = document.getElementById('areaCircularResultado');
 
 function calcularIMC(){
     let IMC = 0;
     let peso = parseFloat(document.getElementById('peso').value);
     let altura = parseFloat(document.getElementById('altura').value);
     IMC = peso / (altura * altura);
-    limparCampos();
-    return mensagemNaTela.innerHTML = IMC.toFixed(2.0);   
+    
+    return mensagemNaTela.innerHTML = `O IMC de ${peso}kg e ${altura}m é de ${IMC.toFixed(2.0)}`;   
 }
 
-function limparCampos(){
-   peso = document.getElementById('peso');
-   peso.value = '';
-   altura = document.getElementById('altura');
-   altura.value = '';
-}
+
 
 function calculadoraFatorial(){
     let fatorial = document.getElementById('fatorial').value;
+    let numero = fatorial;
     let aux = 0;
     if(fatorial==1||fatorial==0){
         fatorial = 1;
@@ -41,14 +42,42 @@ function calculadoraFatorial(){
             fatorial = aux;
         }
     }
-    return mensagemNaTela.innerHTML = fatorial;
+
+    return fatorialNaTela.innerHTML = `O fatorial de ${numero} é ${fatorial}`;
 }
 function conversaoDolarReal(){
     let valor = document.getElementById('converter').value;
-    return mensagemNaTela.innerHTML = valor * 4.80;
+    
+    return conversaoNaTela.innerHTML = `O valor de $${valor}.00 dólares em reais é R$ ${(valor * 4.80).toFixed(2.0)}`;
 }
 function calculoArea(){
     let base = document.getElementById('base').value;
     let alturaRetangular = document.getElementById('alturaRetangular').value;
-    return mensagemNaTela.innerHTML = `Área:    ${base * alturaRetangular}cm²`;
+    
+    return areaNaTela.innerHTML = `Área: ${base * alturaRetangular}cm²`;
+}
+function calculoAreaCircular(){
+    let raio = document.getElementById('raio').value;
+    let area  = (raio * raio) * 3.14;
+    
+    return areaCircularNaTela.innerHTML = `Área do círculo é de ${area}cm²`;
+}
+function calcularTabuada(){
+    let numero = document.getElementById('numero').value;
+    let tabuada = '';
+    for(let i = 1; i<=10; i++){
+        tabuada += `${numero} x ${i} = ${numero * i} <br>`;
+    }
+    for(let i = 1; i<=10; i++){
+        tabuada += `${numero} / ${i} = ${numero / i} <br>`;
+    }
+    for(let i = 1; i<=10; i++){
+        tabuada += `${numero} - ${i} = ${numero - i} <br>`;
+    }
+    for(let i = 1; i<=10; i++){
+        numero = parseFloat(numero);
+        tabuada += `${numero} + ${i} = ${numero + i} <br>`;
+    }
+    
+    return tabuadaNaTela.innerHTML = tabuada.fixed(2.0);
 }

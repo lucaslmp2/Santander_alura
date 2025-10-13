@@ -8,7 +8,7 @@
 body {
     background: linear-gradient(#1354A5 0%, #041832 33.33%, #041832 66.67%, #01080E 100%);
     height: 100vh;
-    display: flex;
+    display: ruby;
     align-items: center;
     justify-content: center;
 }
@@ -27,7 +27,7 @@ body::before {
 }
 
 .container {
-    width: 1200px;
+    width: 700px;
     height: 600px;
     display: flex;
     align-items: center;
@@ -89,7 +89,14 @@ button:disabled {
     font-weight: 700;
     font-family: 'Inter', sans-serif;
 }
-
+#resultado{
+    margin-top: 2rem;
+    font-size: 24px;
+    font-weight: 700;
+    color: #1875E8;
+    height: 200px;
+    overflow-y: auto;
+}
 .container__botoes {
     display: flex;
     gap: 2em;
