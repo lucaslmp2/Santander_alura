@@ -43,3 +43,7 @@ function calculadoraFatorial(){
     }
     return mensagemNaTela.innerHTML = fatorial;
 }
+function conversaoDolarReal(){
+    let valor = document.getElementById('converter').value;
+    return mensagemNaTela.innerHTML = valor * 4.80;
+}
